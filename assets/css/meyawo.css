@@ -12077,11 +12077,23 @@ pre .code {
   min-height: 600px; /* Altura mínima del encabezado */
   display: flex; /* Usa flexbox para el alineamiento de los elementos hijos */
   align-items: center; /* Centra los elementos hijos verticalmente */
-  justify-content: center; /* Centra los elementos hijos horizontalmente */
+  justify-content: space-between; /* Espacia los elementos hijos (texto e imagen) a los lados */
   background-image: url(../imgs/header.jpg); /* Imagen de fondo */
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-repeat: no-repeat; /* Previene que la imagen se repita */
   background-position: center center; /* Centra la imagen de fondo */
+}
+.overlay {
+  display: none; /* Oculta la superposición para asegurarte de que no interfiera */
+}
+
+.circular-image {
+  width: 300px; /* Ajusta el tamaño de la imagen */
+  height: 300px; /* Mantiene la misma altura para que sea circular */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Asegura que la imagen mantenga la proporción */
+  margin-left: 15px; /* Espacio entre el texto y la imagen */
+  opacity: 1; /* Asegúrate de que la opacidad sea 1 */
 }
 
 /* Estilos para la superposición del encabezado (overlay) */
